@@ -1,38 +1,83 @@
-.App {
+/* App.css */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styles */
+.container {
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Password Input Styles */
+.password-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Copy Button Styles */
+.copy-button {
+  background-color: #0074e4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+  background-color: #0054b0;
+}
+
+/* Settings Styles */
+.settings {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.range-input {
+  width: 60%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.checkbox-input {
+  margin-right: 5px;
 }
